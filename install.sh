@@ -1,5 +1,5 @@
 #!/bin/sh
 git clone --recursive https://github.com/mikeymike/vimfiles.git ~/.vimfiles
-ln -s ~/.vimfiles/vim.symlink ~/.vim
-ln -s ~/.vimfiles/vimrc.symlink ~/.vimrc
+ln -sF ~/.vimfiles/vim.symlink ~/.vim
+ln -sF ~/.vimfiles/vimrc.symlink ~/.vimrc
 vim +PluginInstall +qall
